@@ -8,9 +8,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Index</title>
+
 </head>
 <body>
-
+<nav>
+<li><a href="admin.jsp">Admin</a></li>
+</nav>
 </body>
 </html>

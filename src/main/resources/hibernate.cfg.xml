@@ -19,5 +19,7 @@
 
         <mapping class="entity.User"/>
         <mapping class="entity.Role"/>
+        <mapping class="entity.Hero"/>
+        <mapping class="entity.Profile"/>
     </session-factory>
 </hibernate-configuration>

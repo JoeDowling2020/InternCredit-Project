@@ -31,6 +31,9 @@ public class User {
     @OneToMany(mappedBy= "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Role> roles = new HashSet<>();
 
+    @OneToMany(mappedBy= "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<Profile> profiles = new HashSet<>();
+
 
     public User() {
 
@@ -84,6 +87,8 @@ public class User {
         this.password = password;
     }
 
+
+
     /**
      * gets Roles set
      * @return roles
@@ -116,6 +121,24 @@ public class User {
     public void removeRole(Role role) {
         roles.remove(role);
         role.setUser( null );
+    }
+
+    public Set<Profile> getProfiles() {
+        return profiles;
+    }
+
+    public void setProfiles(Set<Profile> profiles) {
+        this.profiles = profiles;
+    }
+
+    public void addProfile(Profile profile) {
+        profiles.add(profile);
+        profile.setUser(this);
+    }
+
+    public void removeProfile(Profile profile) {
+        profiles.remove(profile);
+        profile.setUser( null );
     }
 
 

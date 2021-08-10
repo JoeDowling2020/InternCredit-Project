@@ -28,6 +28,12 @@
   <dependencies>
 
     <dependency>
+      <groupId>com.merakianalytics.orianna</groupId>
+      <artifactId>orianna</artifactId>
+      <version>4.0.0-rc8</version>
+    </dependency>
+
+    <dependency>
       <groupId>org.glassfish.jersey.core</groupId>
       <artifactId>jersey-client</artifactId>
       <version>${jersey-version}</version>

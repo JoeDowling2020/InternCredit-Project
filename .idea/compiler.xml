@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="OverwatchCompanion" />
         <module name="Overwatch Companion" />
+        <module name="EmojiEliminator" />
       </profile>
     </annotationProcessing>
   </component>

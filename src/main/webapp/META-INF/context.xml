@@ -1,0 +1,8 @@
+<Context docBase="EmojiEliminator_war" path="/EmojiEliminator_war" reloadable="true">
+    <Realm className="org.apache.catalina.realm.JDBCRealm"
+           driverName="com.mysql.cj.jdbc.Driver"
+           connectionURL="jdbc:mysql://localhost:3306/emojidatabase?user=root&amp;password=MTKwktsWRXxSBnjv9Dvo"
+           userTable="user" userNameCol="userName" userCredCol="password"
+           userRoleTable="role" roleNameCol="role">
+    </Realm>
+</Context>
