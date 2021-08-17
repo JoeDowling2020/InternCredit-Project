@@ -36,7 +36,7 @@ public class DisplayHeroes extends HttpServlet {
         List<Hero> allHeroes = heroDao.getAll();
         request.setAttribute("allHeroes", allHeroes);
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/allHeroes.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/heroes.jsp");
         dispatcher.forward(request, response);
     }
 }
