@@ -33,6 +33,7 @@
         <div class="carousel-item active">
             <div class="carousel-container">
                 <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Overwatch Companion</span></h2>
+                <img src="images/heroes.webp" alt="Overwatch Cast of Heroes">
                 <p class="animate__animated fanimate__adeInUp">The Overwatch Companion allows you to create a profile with your Overwatch stats and see how you stack up against your friends!</p>
                 <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Sign Up Now!</a>
             </div>
@@ -42,8 +43,9 @@
         <div class="carousel-item">
             <div class="carousel-container">
                 <h2 class="animate__animated animate__fadeInDown">Cast of Heroes</h2>
+                <img src="images/heroes.webp" alt="Overwatch Cast of Heroes">
                 <p class="animate__animated animate__fadeInUp">Overwatch features an international cast of powerful heroes with captivating personalities and backstories. Explore the full roster here.</p>
-                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">View Heroes</a>
+                <a href="allHeroes" class="btn-get-started animate__animated animate__fadeInUp scrollto">View Heroes</a>
             </div>
         </div>
 
@@ -51,6 +53,7 @@
         <div class="carousel-item">
             <div class="carousel-container">
                 <h2 class="animate__animated animate__fadeInDown">Leaderboard</h2>
+                <img src="images/heroes.webp" alt="Overwatch Cast of Heroes">
                 <p class="animate__animated animate__fadeInUp">See where your account stacks up with other Overwatch Companion users!</p>
                 <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">View Leaderboard</a>
             </div>

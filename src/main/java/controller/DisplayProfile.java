@@ -2,6 +2,7 @@ package controller;
 
 import entity.Hero;
 import entity.Profile;
+import entity.User;
 import persistence.GenericDao;
 
 import javax.servlet.RequestDispatcher;
@@ -14,12 +15,14 @@ import java.io.IOException;
 import java.util.List;
 
 @WebServlet(
-        name = "allHeroes", urlPatterns = {"/allHeroes"} )
+        name = "displayProfile", urlPatterns = {"/displayProfile"} )
 public class DisplayProfile extends HttpServlet {
 
     private GenericDao profileDao;
+    private GenericDao userDao;
 
     public void init() {
+        userDao = new GenericDao((User.class));
         profileDao = new GenericDao(Profile.class);
     }
 
@@ -37,7 +40,10 @@ public class DisplayProfile extends HttpServlet {
         List<Profile> allProfiles = profileDao.getAll();
         request.setAttribute("allProfiles", allProfiles);
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/allHeroes.jsp");
+        List<User> allUsers = userDao.getAll();
+        request.setAttribute("allUsers", allUsers);
+
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/users.jsp");
         dispatcher.forward(request, response);
     }
 }
