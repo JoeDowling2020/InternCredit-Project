@@ -6,8 +6,9 @@
         <li><a class="nav-link scrollto" href="allHeroes">Heroes</a></li>
         <li><a class="nav-link scrollto " href="displayProfile">User</a></li>
         <li><a class="nav-link scrollto" href="#pricing">Admin</a></li>
-        <li><a class="nav-link scrollto" href="signIn.jsp">Sign In</a></li>
-        <li><a class="nav-link scrollto" href="signUp.jsp">Sign Up</a></li>
+        <li><a class="nav-link scrollto" href="login">Sign In</a></li>
+        <li><a class="nav-link scrollto" href="signUp">Sign Up</a></li>
+        <li><a class="nav-link scrollto" href="logout">Log Out</a></li>
     </ul>
     <i class="bi bi-list mobile-nav-toggle"></i>
 </nav><!-- .navbar -->

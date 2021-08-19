@@ -17,6 +17,7 @@
 <c:import var="hero" url="includes/hero.jsp"/>
 <c:out value="${head}" escapeXml="false"/>
 <body>
+
 <!-- ======= Header ======= -->
 <header id="header" class="fixed-top d-flex align-items-center  header-transparent ">
     <div class="container d-flex align-items-center justify-content-between">
@@ -33,30 +34,13 @@
 </header><!-- End Header -->
 <c:out value="${hero}" escapeXml="false"/>
 
-<section id="contact" class="contact">
-    <div class="container">
-        <div class="section-title" data-aos="zoom-out">
-            <h2>OW Companion</h2>
-            <p>Sign In</p>
-        </div>
-        <FORM ACTION="j_security_check" METHOD="POST" class="toCenter">
-            <TABLE>
-                <div class="form-group">
-                    <TR class="center"><TD>User name: <INPUT TYPE="TEXT" NAME="j_username" class="form-control"></TD></TR>
-                </div>
-                <div class="form-group">
-                    <TR class="center"><TD>Password: <INPUT TYPE="PASSWORD" NAME="j_password" class="form-control"></TD></TR>
-                </div>
-                <div class="form-group">
-                    <TR class="center"><TH><INPUT TYPE="SUBMIT" VALUE="Log In" class="btn btn-default"></TH></TR>
-                </div>
-                <div class="form-group">
-                    <TR class="center"><TH><input type="reset" value="Clear" class="btn btn-default"></TH></TR>
-                </div>
-            </TABLE>
-        </FORM>
-    </div>
-</section>
+
+<h1>You Have Signed Up!</h1>
+
+<main id="main">
+    <img src="images/heroes.webp" alt="Overwatch Cast of Heroes">
+</main>
+
 <c:out value="${footer}" escapeXml="false"/>
 <c:out value="${scripts}" escapeXml="false"/>
 </body>

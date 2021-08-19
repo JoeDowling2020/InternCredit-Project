@@ -18,7 +18,10 @@ import javax.servlet.http.HttpServletResponse;
  * Class represents a servlet which takes a new users info
  * from the HTML form and inserts it into the database
  */
-@WebServlet("/signUp")
+@WebServlet(
+        name = "signUp",
+        urlPatterns = {"/signUp"}
+)
 public class SignUpUser extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
     private GenericDao genericDao;

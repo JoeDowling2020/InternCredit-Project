@@ -36,13 +36,13 @@ public class LogInAction extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
 
-        String username = request.getRemoteUser();
-        logger.info("User " + username + " has logged in");
+        String userName = request.getRemoteUser();
+        logger.info("User " + userName + " has logged in");
 
-        List<User> foundUser = (List<User>) userDao.getByPropertyEqual("username", username);
+        List<User> foundUser = (List<User>) userDao.getByPropertyEqual("userName", userName);
         User user = foundUser.get(0);
 
-        request.setAttribute("username", username);
+        request.setAttribute("userName", userName);
         request.setAttribute("user", user);
         session.setAttribute("user", user);
 
