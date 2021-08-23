@@ -27,7 +27,7 @@ public class ProfileDaoTest {
     @Test
     void getAllProfilesSuccess() {
         List<Profile> profiles = genericDao.getAll();
-        assertEquals(1, profiles.size());
+        assertEquals(6, profiles.size());
     }
 
     @Test

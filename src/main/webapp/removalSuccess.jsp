@@ -34,8 +34,12 @@
 </header><!-- End Header -->
 <c:out value="${hero}" escapeXml="false"/>
 
+<section class="d-flex flex-column justify-content-end align-items-center">
+    <div>
+        <h1>Removal Success!</h1>
+    </div>
+</section>
 
-<h1>Update Success!</h1>
 
 <c:out value="${footer}" escapeXml="false"/>
 <c:out value="${scripts}" escapeXml="false"/>

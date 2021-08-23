@@ -35,11 +35,20 @@
 <c:out value="${hero}" escapeXml="false"/>
 
 
+<h1>Admin Page</h1>
+
+<div class="center">
+    <br>
+    <a href="displayUsers">View Current Site Users</a>
+</div>
 
 
-<main id="main">
-    <img src="images/heroes.webp" alt="Overwatch Cast of Heroes">
-</main>
+
+<section class="d-flex flex-column justify-content-end align-items-center">
+    <div>
+        <img src="images/heroes.webp" alt="Overwatch Cast of Heroes">
+    </div>
+</section>
 
 <c:out value="${footer}" escapeXml="false"/>
 <c:out value="${scripts}" escapeXml="false"/>

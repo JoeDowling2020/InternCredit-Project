@@ -34,73 +34,6 @@
 </header><!-- End Header -->
 <c:out value="${hero}" escapeXml="false"/>
 
-<%--    <!-- ======= Contact Section ======= -->--%>
-<%--    <section id="contact" class="contact">--%>
-<%--        <div class="container">--%>
-
-<%--            <div class="section-title" data-aos="zoom-out">--%>
-<%--                <h2>Contact</h2>--%>
-<%--                <p>Contact Us</p>--%>
-<%--            </div>--%>
-
-<%--            <div class="row mt-5">--%>
-
-<%--                <div class="col-lg-4" data-aos="fade-right">--%>
-<%--                    <div class="info">--%>
-<%--                        <div class="address">--%>
-<%--                            <i class="bi bi-geo-alt"></i>--%>
-<%--                            <h4>Location:</h4>--%>
-<%--                            <p>A108 Adam Street, New York, NY 535022</p>--%>
-<%--                        </div>--%>
-
-<%--                        <div class="email">--%>
-<%--                            <i class="bi bi-envelope"></i>--%>
-<%--                            <h4>Email:</h4>--%>
-<%--                            <p>info@example.com</p>--%>
-<%--                        </div>--%>
-
-<%--                        <div class="phone">--%>
-<%--                            <i class="bi bi-phone"></i>--%>
-<%--                            <h4>Call:</h4>--%>
-<%--                            <p>+1 5589 55488 55s</p>--%>
-<%--                        </div>--%>
-
-<%--                    </div>--%>
-
-<%--                </div>--%>
-
-<%--                <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left">--%>
-
-<%--                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">--%>
-<%--                        <div class="row">--%>
-<%--                            <div class="col-md-6 form-group">--%>
-<%--                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>--%>
-<%--                            </div>--%>
-<%--                            <div class="col-md-6 form-group mt-3 mt-md-0">--%>
-<%--                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>--%>
-<%--                            </div>--%>
-<%--                        </div>--%>
-<%--                        <div class="form-group mt-3">--%>
-<%--                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>--%>
-<%--                        </div>--%>
-<%--                        <div class="form-group mt-3">--%>
-<%--                            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>--%>
-<%--                        </div>--%>
-<%--                        <div class="my-3">--%>
-<%--                            <div class="loading">Loading</div>--%>
-<%--                            <div class="error-message"></div>--%>
-<%--                            <div class="sent-message">Your message has been sent. Thank you!</div>--%>
-<%--                        </div>--%>
-<%--                        <div class="text-center"><button type="submit">Send Message</button></div>--%>
-<%--                    </form>--%>
-
-<%--                </div>--%>
-
-<%--            </div>--%>
-
-        </div>
-    </section><!-- End Contact Section -->
-
 <section id="contact" class="contact">
     <div class="container">
         <div class="section-title" data-aos="zoom-out">
@@ -126,6 +59,39 @@
         <div class="form-group mt-3">
             <label for="password">Password</label>
             <input id="password" name="password" type="password" placeholder="Password" required class="form-control">
+        </div>
+
+        <div class="form-group mt-3">
+            <label for="ign">IGN</label>
+            <input id="ign" name="ign" type="text" placeholder="IGN" required class="form-control">
+        </div>
+        <div class="form-group mt-3">
+            <label for="level">Level</label>
+            <input id="level" name="level" type="text" placeholder="Level" required class="form-control">
+        </div>
+        <div class="form-group mt-3">
+            <label for="winrate">Win Rate</label>
+            <input id="winrate" name="winrate" type="text" placeholder="Win Rate" required class="form-control">
+        </div>
+        <div class="form-group mt-3">
+            <label for="playtime">Play Time</label>
+            <input id="playtime" name="playtime" type="text" placeholder="Play Time" required class="form-control">
+        </div>
+        <div class="form-group mt-3">
+            <label for="primaryhero">Primary Hero</label>
+            <input id="primaryhero" name="primaryhero" type="text" placeholder="Primary Hero" required class="form-control">
+        </div>
+        <div class="form-group mt-3">
+            <label for="qpwinrate">Quick Play Win Rate</label>
+            <input id="qpwinrate" name="qpwinrate" type="text" placeholder="Quick Play WR" required class="form-control">
+        </div>
+        <div class="form-group mt-3">
+            <label for="qpplaytime">Quick Play Play Time</label>
+            <input id="qpplaytime" name="qpplaytime" type="text" placeholder="Quick Play Play Time" required class="form-control">
+        </div>
+        <div class="form-group mt-3">
+            <label for="qpprimaryhero">Quick Play Primary Hero</label>
+            <input id="qpprimaryhero" name="qpprimaryhero" type="text" placeholder="Quick Play Primary Hero" required class="form-control">
         </div>
         <div class="form-group mt-3">
             <div class="text-center"><button type="submit" class="btn btn-default">Submit</button></div>

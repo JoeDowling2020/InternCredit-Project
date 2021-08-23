@@ -35,10 +35,41 @@
 <c:out value="${hero}" escapeXml="false"/>
 
 
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="section-title" data-aos="zoom-out">
+            <h2>OW Companion</h2>
+            <p>Edit Profile</p>
+        </div>
 
-<main id="main">
-    <img src="images/heroes.webp" alt="Overwatch Cast of Heroes">
-</main>
+        <div class="row mt-5">
+            <div class="center">
+                <form action="<%=request.getContextPath()%>/editProfile" method="post">
+                    <div class="form-group mt-3">
+                        <label for="firstName">First Name</label>
+                        <input id="firstName" name="firstName" type="text" placeholder="First Name" required class="form-control">
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="lastName">Last Name</label>
+                        <input id="lastName" name="lastName" type="text" placeholder="Last Name" required class="form-control">
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="username">User Name</label>
+                        <input id="username" name="username" type="text" placeholder="Username" required class="form-control">
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="password">Password</label>
+                        <input id="password" name="password" type="password" placeholder="Password" required class="form-control">
+                    </div>
+                    <div class="form-group mt-3">
+                        <div class="text-center"><button type="submit" class="btn btn-default">Submit</button></div>
+                        <div class="text-center"><button type="reset" class="btn btn-default">Clear Form</button></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
 
 <c:out value="${footer}" escapeXml="false"/>
 <c:out value="${scripts}" escapeXml="false"/>

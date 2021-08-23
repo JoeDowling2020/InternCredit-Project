@@ -35,7 +35,29 @@
 <c:out value="${hero}" escapeXml="false"/>
 
 
-<h1>Update Success!</h1>
+<main id="main">
+    <table id="resultTable" class="display" width="90%">
+        <thead>
+        <tr>
+            <th>Username</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Remove User & Associated Profile</th>
+        </tr>
+        </thead>
+        <tbody>
+        <c:forEach var="users" items="${users}">
+            <tr>
+                <td>${users.userName}</td>
+                <td>${users.firstName}</td>
+                <td>${users.lastName}</td>
+                <td><a href="removeUser?action=remove&userId=${users.id}">Remove</a></td>
+            </tr>
+        </c:forEach>
+        </tbody>
+    </table>
+</main>
+
 
 <c:out value="${footer}" escapeXml="false"/>
 <c:out value="${scripts}" escapeXml="false"/>

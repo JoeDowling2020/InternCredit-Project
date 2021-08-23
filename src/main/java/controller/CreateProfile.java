@@ -1,6 +1,5 @@
 package controller;
 
-import entity.Profile;
 import entity.Role;
 import entity.User;
 import org.apache.logging.log4j.LogManager;
@@ -23,11 +22,10 @@ import javax.servlet.http.HttpServletResponse;
         name = "signUp",
         urlPatterns = {"/signUp"}
 )
-public class SignUpUser extends HttpServlet {
+public class CreateProfile extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
     private GenericDao genericDao;
     private GenericDao roleDao;
-    private GenericDao profileDao;
 
     /**
      * Initialises the Daos
@@ -35,7 +33,6 @@ public class SignUpUser extends HttpServlet {
     public void init() {
         genericDao = new GenericDao(User.class);
         roleDao = new GenericDao(Role.class);
-        profileDao = new GenericDao(Profile.class);
     }
 
     /**
@@ -77,16 +74,6 @@ public class SignUpUser extends HttpServlet {
         user.setUserName(request.getParameter("username"));
         user.setPassword(request.getParameter("password"));
 
-        Profile profile = new Profile();
-        profile.setIgn(request.getParameter("ign"));
-        profile.setLevel(Integer.parseInt(request.getParameter("level")));
-        profile.setWinRate(Integer.parseInt(request.getParameter("winrate")));
-        profile.setPlayTime(request.getParameter("playtime"));
-        profile.setPrimaryHero(request.getParameter("primaryhero"));
-        profile.setQpWinRate(Integer.parseInt(request.getParameter("qpwinrate")));
-        profile.setQpPlayTime(request.getParameter("qpplaytime"));
-        profile.setQpPrimaryHero(request.getParameter("qpprimaryhero"));
-
         Role role = new Role();
         String userName = user.getUserName();
         int userId = user.getId();
@@ -94,9 +81,7 @@ public class SignUpUser extends HttpServlet {
         role.setRole("user");
         role.setUserName(userName);
         role.setId(userId);
-        profile.setUser(user);
         genericDao.insert(user);
-        profileDao.insert(profile);
         roleDao.insert(role);
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("signUpSuccess.jsp");
