@@ -41,6 +41,7 @@
         <tr>
             <th>Hero Name</th>
             <th>Hero Portrait</th>
+            <th>Hero Description</th>
         </tr>
         </thead>
         <tbody>
@@ -49,6 +50,7 @@
             <tr>
                 <td>${allHeroes.heroName}</td>
                 <td><img src="${allHeroes.heroImage}" alt="Hero Portrait"></td>
+                <td><a href="${allHeroes.heroLink}">Description</a></td>
             </tr>
         </c:forEach>
         </tbody>

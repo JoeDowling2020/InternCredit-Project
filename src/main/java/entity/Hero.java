@@ -22,6 +22,9 @@ public class Hero {
     @Column(name = "heroImage")
     private String heroImage;
 
+    @Column(name = "heroLink")
+    private String heroLink;
+
     public Hero() {
 
     }
@@ -29,7 +32,9 @@ public class Hero {
     public Hero(String heroName, String heroImage) {
         this.heroName = heroName;
         this.heroImage = heroImage;
+        this.heroLink = heroLink;
     }
+
 
     public int getId() {
         return id;
@@ -55,13 +60,12 @@ public class Hero {
         this.heroImage = heroImage;
     }
 
-    @Override
-    public String toString() {
-        return "Hero{" +
-                "id=" + id +
-                ", heroName='" + heroName + '\'' +
-                ", heroImage='" + heroImage + '\'' +
-                '}';
+    public String getHeroLink() {
+        return heroLink;
+    }
+
+    public void setHeroLink(String heroLink) {
+        this.heroLink = heroLink;
     }
 
     @Override
@@ -69,11 +73,21 @@ public class Hero {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Hero hero = (Hero) o;
-        return id == hero.id && Objects.equals(heroName, hero.heroName) && Objects.equals(heroImage, hero.heroImage);
+        return id == hero.id && Objects.equals(heroName, hero.heroName) && Objects.equals(heroImage, hero.heroImage) && Objects.equals(heroLink, hero.heroLink);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, heroName, heroImage);
+        return Objects.hash(id, heroName, heroImage, heroLink);
+    }
+
+    @Override
+    public String toString() {
+        return "Hero{" +
+                "id=" + id +
+                ", heroName='" + heroName + '\'' +
+                ", heroImage='" + heroImage + '\'' +
+                ", heroLink='" + heroLink + '\'' +
+                '}';
     }
 }

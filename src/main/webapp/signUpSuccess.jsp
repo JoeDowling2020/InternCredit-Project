@@ -34,12 +34,15 @@
 </header><!-- End Header -->
 <c:out value="${hero}" escapeXml="false"/>
 
+<section class="d-flex flex-column justify-content-end align-items-center">
 
 <h1>You Have Signed Up!</h1>
 
 <main id="main">
     <img src="images/heroes.webp" alt="Overwatch Cast of Heroes">
 </main>
+
+</section>
 
 <c:out value="${footer}" escapeXml="false"/>
 <c:out value="${scripts}" escapeXml="false"/>

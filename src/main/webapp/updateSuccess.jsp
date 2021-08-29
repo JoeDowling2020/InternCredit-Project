@@ -24,8 +24,7 @@
 
         <div class="logo">
             <h1><a href="index.html">Overwatch Companion</a></h1>
-            <!-- Uncomment below if you prefer to use an image logo -->
-            <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
         </div>
 
         <c:out value="${nav}" escapeXml="false"/>
@@ -34,8 +33,16 @@
 </header><!-- End Header -->
 <c:out value="${hero}" escapeXml="false"/>
 
+<section class="d-flex flex-column justify-content-end align-items-center">
 
-<h1>Update Success!</h1>
+    <h1>Update Success!</h1>
+
+    <main id="main">
+        <img src="images/heroes.webp" alt="Overwatch Cast of Heroes">
+    </main>
+
+</section>
+
 
 <c:out value="${footer}" escapeXml="false"/>
 <c:out value="${scripts}" escapeXml="false"/>

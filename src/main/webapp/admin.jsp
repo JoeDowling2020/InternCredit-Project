@@ -35,16 +35,18 @@
 <c:out value="${hero}" escapeXml="false"/>
 
 
-<h1>Admin Page</h1>
-
-<div class="center">
-    <br>
-    <a href="displayUsers">View Current Site Users</a>
-</div>
-
-
+    <div class="section-title" data-aos="zoom-out">
+        <h2>OW Companion</h2>
+        <p>Admin</p>
+    </div>
 
 <section class="d-flex flex-column justify-content-end align-items-center">
+    <a href="displayUsers">View Current Site Users</a>
+
+
+
+
+
     <div>
         <img src="images/heroes.webp" alt="Overwatch Cast of Heroes">
     </div>
