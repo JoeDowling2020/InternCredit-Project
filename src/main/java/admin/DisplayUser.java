@@ -29,10 +29,8 @@ public class DisplayUser extends HttpServlet {
 
         GenericDao<User> userDao = new GenericDao(User.class);
         List<User> users = userDao.getAll();
-
         request.setAttribute("users", users);
         RequestDispatcher dispatcher = request.getRequestDispatcher("/displayUsers.jsp");
         dispatcher.forward(request, response);
-
     }
 }

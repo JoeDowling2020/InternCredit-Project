@@ -30,7 +30,6 @@ public class LogOutAction extends HttpServlet {
      * @throws IOException Whether or not an IO exception occurs.
      */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String user = request.getRemoteUser();
 
         HttpSession session = request.getSession();
         session.removeAttribute("user");

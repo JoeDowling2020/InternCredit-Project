@@ -36,9 +36,16 @@ public class User {
 
 
     public User() {
-
+        //Tried and true no arg constructor!
     }
 
+    /**
+     *
+     * @param firstName
+     * @param lastName
+     * @param userName
+     * @param password
+     */
     public User(String firstName, String lastName, String userName, String password) {
         this();
         this.firstName = firstName;
@@ -47,47 +54,85 @@ public class User {
         this. password = password;
     }
 
+    /**
+     * Get ID
+     * @return id
+     */
     public int getId() {
         return id;
     }
 
+    /**
+     * Set ID
+     * @param id
+     */
     public void setId(int id) {
         this.id = id;
     }
 
+    /**
+     * Get First Name
+     * @return firstName
+     */
     public String getFirstName() {
         return firstName;
     }
 
+    /**
+     * Set First Name
+     * @param firstName
+     */
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
+    /**
+     * Get Last Name
+     * @return
+     */
     public String getLastName() {
         return lastName;
     }
 
+    /**
+     * Set Last Name
+     * @param lastName
+     */
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
+    /**
+     * Get Username
+     * @return userName
+     */
     public String getUserName() {
         return userName;
     }
 
+    /**
+     * Set Username
+     * @param userName
+     */
     public void setUserName(String userName) {
         this.userName = userName;
     }
 
+    /**
+     * Get Password
+     * @return password
+     */
     public String getPassword() {
         return password;
     }
 
+    /**
+     * Set Passwords
+     * @param password
+     */
     public void setPassword(String password) {
         this.password = password;
     }
-
-
 
     /**
      * gets Roles set
@@ -123,19 +168,35 @@ public class User {
         role.setUser( null );
     }
 
+    /**
+     * Gets Profiles
+     * @return profiles
+     */
     public Set<Profile> getProfiles() {
         return profiles;
     }
 
+    /**
+     * Sets Profiles
+     * @param profiles
+     */
     public void setProfiles(Set<Profile> profiles) {
         this.profiles = profiles;
     }
 
+    /**
+     * Add Profile
+     * @param profile
+     */
     public void addProfile(Profile profile) {
         profiles.add(profile);
         profile.setUser(this);
     }
 
+    /**
+     * Remove Profile
+     * @param profile
+     */
     public void removeProfile(Profile profile) {
         profiles.remove(profile);
         profile.setUser( null );
@@ -159,7 +220,8 @@ public class User {
         if (o == null || getClass() != o.getClass()) return false;
         User user = (User) o;
         return id == user.id && Objects.equals(firstName, user.firstName)
-                && Objects.equals(lastName, user.lastName) && Objects.equals(userName, user.userName) && Objects.equals(password, user.password);
+                && Objects.equals(lastName, user.lastName) && Objects.equals(userName, user.userName)
+                && Objects.equals(password, user.password);
     }
 
     @Override

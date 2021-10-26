@@ -28,43 +28,81 @@ public class Role {
     private User user;
 
     public Role() {
-
+        //Tried and true no arg constructor!
     }
 
+    /**
+     *
+     * @param user
+     * @param userName
+     * @param role
+     */
     public Role(User user, String userName, String role) {
         this.user = user;
         this.userName = userName;
         this.role = role;
     }
 
+    /**
+     * Get the ID
+     * @return id
+     */
     public int getId() {
         return id;
     }
 
+    /**
+     * Set the ID
+     * @param id
+     */
     public void setId(int id) {
         this.id = id;
     }
 
+    /**
+     * Get the UserName
+     * @return userName
+     */
     public String getUserName() {
         return userName;
     }
 
+    /**
+     * Set the UserName
+     * @param userName
+     */
     public void setUserName(String userName) {
         this.userName = userName;
     }
 
+    /**
+     * Get the Role
+     * @return role
+     */
     public String getRole() {
         return role;
     }
 
+    /**
+     * Set the Role
+     * @param role
+     */
     public void setRole(String role) {
         this.role = role;
     }
 
+    /**
+     * Get the User
+     * @return user
+     */
     public User getUser() {
         return user;
     }
 
+    /**
+     * Set the User
+     * @param user
+     */
     public void setUser(User user) {
         this.user = user;
     }

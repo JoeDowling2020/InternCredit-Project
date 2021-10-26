@@ -38,13 +38,10 @@ public class RemoveUser extends HttpServlet {
      */
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+
         selectedUserId = Integer.parseInt(request.getParameter("userId"));
-
         System.out.println(selectedUserId);
-
-        userDao.delete(userDao.getById(selectedUserId));
-//        profileDao.delete(profileDao.getById(selectedUserId));
-
+        userDao.delete(userDao.getById(selectedUserId));;
         RequestDispatcher dispatcher = request.getRequestDispatcher("/removalSuccess.jsp");
         dispatcher.forward(request, response);
     }

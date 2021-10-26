@@ -87,7 +87,8 @@ public class SignUpUser extends HttpServlet {
         profile.setQpPlayTime(request.getParameter("qpplaytime"));
         profile.setQpPrimaryHero(request.getParameter("qpprimaryhero"));
 
-        Role role = new Role();
+        Role role;
+        role = new Role();
         String userName = user.getUserName();
         int userId = user.getId();
         role.setUser(user);
