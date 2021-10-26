@@ -39,10 +39,10 @@ public class Profile {
     @Column(name = "qpWinRate")
     private int qpWinRate;
 
-    @Column(name = "")
+    @Column(name = "qpPlayTime")
     private String qpPlayTime;
 
-    @Column(name = "")
+    @Column(name = "qpPrimaryHero")
     private  String qpPrimaryHero;
 
 
@@ -87,7 +87,7 @@ public class Profile {
 
     /**
      * Set the Profile ID
-     * @param id
+     * @param id the id
      */
     public void setId(int id) {
         this.id = id;
@@ -103,7 +103,7 @@ public class Profile {
 
     /**
      * Set the User
-     * @param user
+     * @param user the user
      */
     public void setUser(User user) {
         this.user = user;
@@ -119,7 +119,7 @@ public class Profile {
 
     /**
      * Set the In Game Name
-     * @param ign
+     * @param ign the in game name
      */
     public void setIgn(String ign) {
         this.ign = ign;
@@ -127,7 +127,7 @@ public class Profile {
 
     /**
      * Get the Player Level
-     * @return
+     * @return player level
      */
     public int getLevel() {
         return level;
@@ -135,7 +135,7 @@ public class Profile {
 
     /**
      * Set the Player Level
-     * @param level
+     * @param level player level
      */
     public void setLevel(int level) {
         this.level = level;
@@ -151,7 +151,7 @@ public class Profile {
 
     /**
      * Set the Win Rate
-     * @param winRate
+     * @param winRate the win rate
      */
     public void setWinRate(int winRate) {
         this.winRate = winRate;
@@ -167,7 +167,7 @@ public class Profile {
 
     /**
      * Set Play Time
-     * @param playTime
+     * @param playTime the time played
      */
     public void setPlayTime(String playTime) {
         this.playTime = playTime;
@@ -183,7 +183,7 @@ public class Profile {
 
     /**
      * Set Primary Hero
-     * @param primaryHero
+     * @param primaryHero the primary hero
      */
     public void setPrimaryHero(String primaryHero) {
         this.primaryHero = primaryHero;
@@ -199,7 +199,7 @@ public class Profile {
 
     /**
      * Set Quick Play Win Rate
-     * @param qpWinRate
+     * @param qpWinRate the quick play win rate
      */
     public void setQpWinRate(int qpWinRate) {
         this.qpWinRate = qpWinRate;
@@ -215,7 +215,7 @@ public class Profile {
 
     /**
      * Set Quick Play Time
-     * @param qpPlayTime
+     * @param qpPlayTime the quick play play time
      */
     public void setQpPlayTime(String qpPlayTime) {
         this.qpPlayTime = qpPlayTime;
@@ -231,7 +231,7 @@ public class Profile {
 
     /**
      * Set Quick Play Primary Hero
-     * @param qpPrimaryHero
+     * @param qpPrimaryHero quick play primary hero
      */
     public void setQpPrimaryHero(String qpPrimaryHero) {
         this.qpPrimaryHero = qpPrimaryHero;

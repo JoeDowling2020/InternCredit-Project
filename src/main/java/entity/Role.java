@@ -33,9 +33,9 @@ public class Role {
 
     /**
      *
-     * @param user
-     * @param userName
-     * @param role
+     * @param user the user
+     * @param userName the username
+     * @param role the role
      */
     public Role(User user, String userName, String role) {
         this.user = user;
@@ -53,7 +53,7 @@ public class Role {
 
     /**
      * Set the ID
-     * @param id
+     * @param id the id
      */
     public void setId(int id) {
         this.id = id;
@@ -69,7 +69,7 @@ public class Role {
 
     /**
      * Set the UserName
-     * @param userName
+     * @param userName the username
      */
     public void setUserName(String userName) {
         this.userName = userName;
@@ -85,7 +85,7 @@ public class Role {
 
     /**
      * Set the Role
-     * @param role
+     * @param role the Role
      */
     public void setRole(String role) {
         this.role = role;
@@ -101,7 +101,7 @@ public class Role {
 
     /**
      * Set the User
-     * @param user
+     * @param user the user
      */
     public void setUser(User user) {
         this.user = user;

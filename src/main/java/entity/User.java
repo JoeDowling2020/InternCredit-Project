@@ -41,10 +41,10 @@ public class User {
 
     /**
      *
-     * @param firstName
-     * @param lastName
-     * @param userName
-     * @param password
+     * @param firstName the user's first name
+     * @param lastName the user's last name
+     * @param userName the user's username
+     * @param password the user's password
      */
     public User(String firstName, String lastName, String userName, String password) {
         this();
@@ -64,7 +64,7 @@ public class User {
 
     /**
      * Set ID
-     * @param id
+     * @param id the user's id
      */
     public void setId(int id) {
         this.id = id;
@@ -80,7 +80,7 @@ public class User {
 
     /**
      * Set First Name
-     * @param firstName
+     * @param firstName the user's first name
      */
     public void setFirstName(String firstName) {
         this.firstName = firstName;
@@ -88,7 +88,7 @@ public class User {
 
     /**
      * Get Last Name
-     * @return
+     * @return lastName the user's last name
      */
     public String getLastName() {
         return lastName;
@@ -96,7 +96,7 @@ public class User {
 
     /**
      * Set Last Name
-     * @param lastName
+     * @param lastName the user's last name
      */
     public void setLastName(String lastName) {
         this.lastName = lastName;
@@ -112,7 +112,7 @@ public class User {
 
     /**
      * Set Username
-     * @param userName
+     * @param userName the user's username
      */
     public void setUserName(String userName) {
         this.userName = userName;
@@ -128,7 +128,7 @@ public class User {
 
     /**
      * Set Passwords
-     * @param password
+     * @param password the user's password
      */
     public void setPassword(String password) {
         this.password = password;
@@ -178,7 +178,7 @@ public class User {
 
     /**
      * Sets Profiles
-     * @param profiles
+     * @param profiles the profiles
      */
     public void setProfiles(Set<Profile> profiles) {
         this.profiles = profiles;
@@ -186,7 +186,7 @@ public class User {
 
     /**
      * Add Profile
-     * @param profile
+     * @param profile the user's profile
      */
     public void addProfile(Profile profile) {
         profiles.add(profile);
@@ -195,7 +195,7 @@ public class User {
 
     /**
      * Remove Profile
-     * @param profile
+     * @param profile the profile to be removed
      */
     public void removeProfile(Profile profile) {
         profiles.remove(profile);

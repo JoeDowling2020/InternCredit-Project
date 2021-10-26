@@ -36,7 +36,6 @@ public class Hero {
     public Hero(String heroName, String heroImage) {
         this.heroName = heroName;
         this.heroImage = heroImage;
-        this.heroLink = heroLink;
     }
 
 
@@ -50,7 +49,7 @@ public class Hero {
 
     /**
      * Set the Hero ID
-     * @param id
+     * @param id the id
      */
     public void setId(int id) {
         this.id = id;
@@ -66,7 +65,7 @@ public class Hero {
 
     /**
      * Set Hero Name
-     * @param heroName
+     * @param heroName the hero name
      */
     public void setHeroName(String heroName) {
         this.heroName = heroName;
@@ -82,26 +81,10 @@ public class Hero {
 
     /**
      * Set Hero Image
-     * @param heroImage
+     * @param heroImage the hero image
      */
     public void setHeroImage(String heroImage) {
         this.heroImage = heroImage;
-    }
-
-    /**
-     * Get Hero Link
-     * @return heroLink
-     */
-    public String getHeroLink() {
-        return heroLink;
-    }
-
-    /**
-     * Set Hero Link
-     * @param heroLink
-     */
-    public void setHeroLink(String heroLink) {
-        this.heroLink = heroLink;
     }
 
     @Override
@@ -109,13 +92,12 @@ public class Hero {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Hero hero = (Hero) o;
-        return id == hero.id && Objects.equals(heroName, hero.heroName) && Objects.equals(heroImage, hero.heroImage)
-                && Objects.equals(heroLink, hero.heroLink);
+        return id == hero.id && Objects.equals(heroName, hero.heroName) && Objects.equals(heroImage, hero.heroImage);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, heroName, heroImage, heroLink);
+        return Objects.hash(id, heroName, heroImage);
     }
 
     @Override
@@ -124,7 +106,6 @@ public class Hero {
                 "id=" + id +
                 ", heroName='" + heroName + '\'' +
                 ", heroImage='" + heroImage + '\'' +
-                ", heroLink='" + heroLink + '\'' +
                 '}';
     }
 }
